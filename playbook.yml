@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: true
+
+  roles:
+    - install_nginx
+
+  tasks:
+    - name: Ping Hosts
+      action: ping
+    
+    
